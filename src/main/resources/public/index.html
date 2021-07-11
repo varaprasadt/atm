@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ATM</title>
+    <style>
+#atms {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#atms td, #atms th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#atms tr:nth-child(even){background-color: #f2f2f2;}
+
+#atms tr:hover {background-color: #ddd;}
+
+#atms thead {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+    <title>Hello jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="atm.js"></script>
+</head>
+<body>
+
+<table class="atms" id="atms">
+    <thead>
+    <tr><td>Street</td><td>House Number</td><td>Postal Code</td><td>City<input type="text" id="city"></td><td><BUTTON value="Search" onclick="doSearch();">Search</BUTTON></td></tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+
+</body>
+</html>
